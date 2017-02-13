@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceRoot": "./src/server",
+    "outDir": "../../server",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "../../public",
+    "../../node_modules",
+    "../../typings/browser",
+    "../../typings/browser.d.ts"
+  ],
+  "filesGlob": [
+    "../../typings/index.d.ts",
+    "**/*.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "../../typings/index.d.ts",
+    "app.ts",
+    "config/express.ts",
+    "config/redis.ts"
+  ]
+}
